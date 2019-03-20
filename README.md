@@ -122,8 +122,7 @@ You can find some tutorials and explanations on our [YouTube channel](https://ww
 - [Google Accelerated Mobile Pages](https://divanteltd.github.io/vue-storefront/guide/basics/amp.html)
 
 ### Vue Storefront core and themes
-
-- [Working with themes](https://divanteltd.github.io/vue-storefront/guide/core-themes/themes.html)
+- [Themes in Vue Storefront](https://divanteltd.github.io/vue-storefront/guide/core-themes/themes.html)
 - [Layouts and advanced output operations](https://divanteltd.github.io/vue-storefront/guide/core-themes/layouts.html)
 - [Working with Vue Storefront core components](https://divanteltd.github.io/vue-storefront/guide/core-themes/core-components.html)
 - [Working with UI Store (interface state)](https://divanteltd.github.io/vue-storefront/guide/core-themes/ui-store.html)
