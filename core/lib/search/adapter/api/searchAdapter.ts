@@ -42,7 +42,7 @@ export class SearchAdapter {
 
     const storeView = (Request.store === null) ? currentStoreView() : prepareStoreView(Request.store)
 
-    Request.index = storeView.elasticsearch.index
+    Request.index = storeView.elasticsearch.index + '_' + Request.type
 
     let url = storeView.elasticsearch.host
     if (!url.startsWith('http')) {
@@ -75,7 +75,7 @@ export class SearchAdapter {
     if (rootStore.state.config.elasticsearch.queryMethod === 'GET') {
       httpQuery.request = JSON.stringify(ElasticsearchQueryBody)
     }
-    url = url + '/' + encodeURIComponent(Request.index) + '/' + encodeURIComponent(Request.type) + '/_search'
+    url = url + '/' + encodeURIComponent(Request.index) + '/_search'
     url = url + '?' + buildURLQuery(httpQuery)
     return fetch(url, { method: rootStore.state.config.elasticsearch.queryMethod,
       mode: 'cors',
